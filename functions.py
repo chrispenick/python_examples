@@ -6,7 +6,7 @@
 # print(adder("a", "b", "c"))
 # print(adder("fred", 1, None))
 
-def adder(*nums):
+def adder(*nums): # expect items in a box
     total = 0
     
     for num in nums:
@@ -16,3 +16,7 @@ def adder(*nums):
     return total
 
 print(adder(1, 2, 3, 4, 5, 6))
+
+numbas = [3,4,8,2,9,1]
+
+print(adder(numbas))

@@ -16,7 +16,7 @@ app = Flask(__name__)
 def home():
     return "<h1>Decision Tree Classifier</h1>"
 
-@app.route('/predict', method=['POST'])
+@app.route('/predict', methods=['POST'])
 def predict():
     data = request.get_json(force=True)
     prediction = model.predict([np.array(data['features'])])

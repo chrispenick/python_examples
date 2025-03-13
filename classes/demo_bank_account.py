@@ -1,7 +1,7 @@
 '''Bank account class demo'''
 
 # import the BankAccount class from the bank_account module
-from classes.bank_account import BankAccount
+from bank_account import BankAccount
 
 # Creating two bank account instances
 alice_account = BankAccount("Alice Smith", "AC001", 1000)

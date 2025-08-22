@@ -1,4 +1,4 @@
-# def adder(x,y,z):
+# def adder(x, y, z):
 #     return x + y + z
 
 # print(adder(1,2,3))
@@ -8,15 +8,13 @@
 
 def adder(*nums): # expect items in a box
     total = 0
-    
     for num in nums:
         total += num
         # total = total + num
-    
     return total
 
-print(adder(1, 2, 3, 4, 5, 6))
+print(adder(1, 2, 3))
 
-numbas = [3,4,8,2,9,1]
+# numbas = [3,4,8,2,9,1]
 
-print(adder(*numbas))
+# print(adder(*numbas))
